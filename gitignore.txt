@@ -1,0 +1,15 @@
+# Build output
+*.o
+*.elf
+*.bin
+*.img
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Secrets: never commit keys
+.env
+*.key
+secrets.*
