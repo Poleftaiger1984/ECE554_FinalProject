@@ -47,7 +47,7 @@ The display shows the highest-priority active alarm.
 
 Thresholds are constants in `globals.h`.
 
-## Serial protocol
+## How packets are structured 
 
 Each packet is one line of text ending in a newline
 
@@ -102,7 +102,7 @@ The window switches to the connected display and updates once per second.
 
 **4. Optional: AI reports**
 
-Open `hostMonitor.py` and set `API_KEY` to a Gemini API key. Without one, the daemon sends the message "API KEY MISSING" instead of a report.
+Open `hostMonitor.py` and set `API_KEY` to a Gemini API key. Without one, the daemon sends the message "API KEY MISSING" instead of a report. The script can be configured to work with any LLM service, but our implementation used Gemini due to ease of access.
 
 **5. Optional: trigger alarms**
 
